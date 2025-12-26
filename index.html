@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compras da Semana</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style.css">
-  <title>COMPRAS DA SEMANA</title>
 </head>
 <body>
-   <header id="title">
-    <a href="">Voltar</a>
-     <h1>Compras da semana</h1>
-   </header>
 
-   <main >
-    <div id="container">
-    <section>
-    <div class="item">
-      <input type="text" placeholder="Adcione um novo item">
-      <button>Adcionar item </button>
-    </div>
-    <section class="list">
-     <ul id="list">
-      <label class="row">
-        <input type="checkbox">
-        <span>Pão de forma</span>
-      </label>
-      <label class="row">
-        <input type="checkbox">
-        <span>Café preto</span>
-      </label>
-      <label class="row">
-        <input type="checkbox">
-        <span>Suco de laranja</span>
-      </label>
-      <label class="row">
-        <input type="checkbox">
-        <span>Bolacha</span>
-      </label>
-     </ul>
-    </section>
-    </section>
-    </div>
-   </main>
+  <header class="header container">
+    <a href="#" class="back">Voltar</a>
+    <h1>Compras da semana</h1>
+  </header>
 
+  <main class="container">
+    <form class="item-form">
+      <input 
+        type="text" 
+        placeholder="Adicione um novo item"
+        id="itemInput"
+      />
+      <button type="submit">Adicionar item</button>
+    </form>
 
+    <ul class="list" id="list"></ul>
+  </main>
 
   <script src="script.js"></script>
 </body>
